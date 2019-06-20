@@ -1,0 +1,5 @@
+#!/bin/sh
+
+CUSOR=xdotool getmouselocation | sed -e 's/ sc.*//' -e 's/ /\n/' -e 's/\(x\|y\)://g'
+
+echo $CUSOR
